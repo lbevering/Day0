@@ -41,3 +41,33 @@ def test():
     else:
       print('Please choose a valid option.')
 
+list(range(10))
+    will print a list of numbers 0-10
+list(range(1,10))
+    will print a list of numbers 1-10
+list(range(0,10,2))
+    will print a list of numbers 0-10 counting by 2s 
+list(range(0,10,-1))
+    will print a list of numbers 0-10 counting backwards from 10
+
+
+catalog = {'Apex':50,'COD':79.99,'MVP':154.49}
+order = [('MVP',5),('COD',2)]
+total = 0
+for i in order:
+    print(catalog[i[0]] * i[1])
+    total += catalog[i[0]] * i[1]
+print(total)
+
+
+
+
+
+
+
+
+
+
+
+
+
