@@ -72,7 +72,7 @@ print(total)
   9     '''
  10     pass
  11     floatstr = floatstr.split(',')
- 12     for f in range(0,len(floatstr)):
+ 12     for f in range(0,len(floatstr)):scp student@10.50.41.200:/home/student/public/activities/practice-exam/v1/__pycache__/exam.cpython-36.pyc /home/lane.p.bevering80
  13         floatstr[f] = float(floatstr[f])
  14     return floatstr
  15 def q2(*args):
@@ -229,7 +229,7 @@ print(total)
 166     TLO: 112-SCRPY003, LSA 1
 167     TLO: 112-SCRPY004, LSA 1
 168     Given the argument numlist as a list of numbers, return True if all 
-169     numbers in the list are NOT negative. If any numbers in the list are
+169     numbers in the list are NOT negative. If any numbers in the list arescp student@10.50.41.200:/home/student/public/activities/practice-exam/v1/__pycache__/exam.cpython-36.pyc /home/lane.p.bevering80
 170     negative, return False.
 171     '''
 172     pos = True
@@ -241,7 +241,7 @@ print(total)
 178     pass
 179 
 
-
+scp student@10.50.41.200:/home/student/public/activities/practice-exam/v1/__pycache__/exam.cpython-36.pyc /home/lane.p.bevering80
 
 
 
