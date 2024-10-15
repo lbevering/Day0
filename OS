@@ -3,4 +3,11 @@ LABE-M-007
 password
 M24007
 https://os.cybbh.io/public/os/latest/index.html
+stack 9
+  10.50.25.242
 
+Persistence
+  Powershell
+    powershell profiles
+    
+  Linux
