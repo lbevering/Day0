@@ -2,12 +2,30 @@ http://10.50.22.129:8000/
 LABE-M-007
 password
 M24007
+
 https://os.cybbh.io/public/os/latest/index.html
+
 stack 9
   10.50.25.242
 
 Persistence
   Powershell
     powershell profiles
+    HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+    HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+    HKU\<SID>\Software\Microsoft\Windows\CurrentVersion\Run
+    HKU\<SID>\Software\Microsoft\Windows\CurrentVersion\RunOnce
+    HKLM\SYSTEM\CurrentControlSet\services
+    HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+    HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+    HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
     
+
   Linux
+
+
+
+Map to an Internal Server on PowerShell
+New-PSDrive -Name FileServer -PSProvider FileSystem -Root "\\file-server\warrior share"
+
+
