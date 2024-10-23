@@ -8,9 +8,26 @@ https://os.cybbh.io/public/os/latest/index.html
 stack 9
   10.50.25.242
 
+find evil ctfs for linux
+process validity ctfs for both windows and linux
+understand things for users in boot process
+
+get sysinternals tools for windows
+net use * http://live.sysinternals.com
+
 Persistence
   Powershell
     powershell profiles
+      -4
+        -All Users, All Hosts
+          -$PsHome\Profile.ps1
+        -All Users, Current Host
+          -$PsHome\Microsoft.PowerShell_profile.ps1
+        -Current User, All Hosts
+          -$Home\[My]Documents\Profile.ps1
+        -Current User, Current Host
+          -$Home\[My ]Documents\WindowsPowerShell\Profile.ps1
+      -test-path -path $profile.(one of the profiles ie. CurrentUserCurrentHost)
     HKLM\Software\Microsoft\Windows\CurrentVersion\Run
     HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
     HKU\<SID>\Software\Microsoft\Windows\CurrentVersion\Run
@@ -19,13 +36,72 @@ Persistence
     HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
     HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
     HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-    
-
-  Linux
-
-
+    schtasks
+    registry locations
+    services/processes
+      -get-service
+      -get-ciminstance win32_service
+      -get-process -id <pid>
+    Artifacts
+      -UserAssist
+      -Windows Background Activity Moderator (BAM)
+      -Recycle Bin
+      -Prefetch
+      -Jump Lists
+      -Recent Files
+      -Browser Artifacts
+    ports
+      -sequential numbers
+      -consecutive numbers
+      -3389 (rdp)
+    AutoRun
+      -pink means no publisher info found
+        -could be bad but look further
+      -login, services, and scheduled tasks
+      -right click, go to entry
+    obfuscation
+      -taking name of something legit
+        -ex. GoogleUpdate
+      -abnormal for google device
+        -spotify, netflix, steam, etc...
+      -mispelling of words
+      -right name wrong location
+        -C:\users\public\downloads\svchost
+      
+Linux
+    cron
+      -is a service in linux
+      -/etc/crontab
+      -/var/spool/cron
+      -/etc/cron.d
+    /etc/init 
+      --sysv
+    /etc/profile
+    /etc/environment
+    /etc/inittab
+      --sysv
+    /etc/rc.d/*
+      -ls in order to see the run lvls. IE. rc0.d, rc1.d, etc....
+    /lib/systemd/systemd
+    usr/lib/systemd/system
+    services/processes
+      -ps -elf
+      -top or htop
+      -systemctl status <pid>
+      
 
 Map to an Internal Server on PowerShell
 New-PSDrive -Name FileServer -PSProvider FileSystem -Root "\\file-server\warrior share"
+
+
+
+
+
+
+
+
+
+
+
 
 
