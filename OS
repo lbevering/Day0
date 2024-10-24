@@ -93,6 +93,9 @@ Linux
 Map to an Internal Server on PowerShell
 New-PSDrive -Name FileServer -PSProvider FileSystem -Root "\\file-server\warrior share"
 
+How to find and read data streams
+https://blog.ironmansoftware.com/daily-powershell/powershell-alternate-data-streams/
+
 
 
 
